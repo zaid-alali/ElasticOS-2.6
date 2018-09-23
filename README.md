@@ -4,7 +4,7 @@
 About
 =====
 
-ElasticOS is a Linux OS with a set of operating system primitives which provides a scaling abstraction to cloud applications in which they can transparently be enabled to support scaled execution across multiple physical nodes as resource needs go beyond that available on a single machine.
+ElasticOS is a Linux OS with a set of operating system primitives which provides a scaling abstraction to cloud applications in which they can transparently be enabled to support scaled execution across multiple physical nodes as resource needs to go beyond that available on a single machine.
 
 These primitives include:
 
@@ -16,7 +16,7 @@ These primitives include:
 
  
 
-This joint disaggregation of memory and computing allows for transparent elasticity, improving an application’s performance by capitalizing on the underlying dynamic infrastructure without needing an application re-write. We have implemented these primitives in a Linux 2.6.
+This joint disaggregation of memory and computing allows for transparent elasticity, improving an application’s performance by capitalizing on the underlying dynamic infrastructure without needing an application re-write. We have implemented these primitives in a Linux 2.6 Kernel.
 
  
 
