@@ -1,0 +1,11 @@
+/usr/bin/make  all-am
+make[1]: Entering directory `/home/ehab/Desktop/nbd-2.9.16'
+/usr/bin/gcc -DHAVE_CONFIG_H -I.  -DSYSCONFDIR='"/usr/local/etc"'  -g3 -gdwarf-2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -g3 -gdwarf-2 -MT nbd_server-nbd-server.o -MD -MP -MF .deps/nbd_server-nbd-server.Tpo -c -o nbd_server-nbd-server.o `test -f 'nbd-server.c' || echo './'`nbd-server.c
+nbd-server.c: In function ‘glib_message_syslog_redirect’:
+nbd-server.c:1869:5: warning: format not a string literal and no format arguments
+mv -f .deps/nbd_server-nbd-server.Tpo .deps/nbd_server-nbd-server.Po
+/usr/bin/gcc -g3 -gdwarf-2 -I/usr/include/glib-2.0 -I/usr/lib/x86_64-linux-gnu/glib-2.0/include   -g3 -gdwarf-2   -o nbd-server nbd_server-nbd-server.o -L/usr/lib/x86_64-linux-gnu -lglib-2.0   
+/usr/bin/gcc -DHAVE_CONFIG_H -I.     -g3 -gdwarf-2 -MT nbd-client.o -MD -MP -MF .deps/nbd-client.Tpo -c -o nbd-client.o nbd-client.c
+mv -f .deps/nbd-client.Tpo .deps/nbd-client.Po
+/usr/bin/gcc  -g3 -gdwarf-2   -o nbd-client nbd-client.o  
+make[1]: Leaving directory `/home/ehab/Desktop/nbd-2.9.16'
