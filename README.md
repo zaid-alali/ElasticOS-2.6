@@ -43,7 +43,7 @@ Prerequisites :
 Setup:
 ------
 
-### 1. Clone ElasticOS source code.
+### 1. Clone ElasticOS source code to your home directory.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd ~
