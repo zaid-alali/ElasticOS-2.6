@@ -11,7 +11,7 @@ if [ $? -ne 0 ]
 fi
 
 ssh -t -t root@$EOS_REMOTE_MACHINE << HERE
-	cd ~/ElasticOS-2.6/misc/nbd-2.9.16/
+	cd $(EOS_DIR)/misc/nbd-2.9.16/
 	./nbd-server 1043 /mnt/nbdserv &
 	sysctl vm.page-cluster=0
 	exit
@@ -38,9 +38,9 @@ mkswap -f /dev/eosnbd1
 swapon /dev/eosnbd1
 
 ssh -t -t root@$EOS_REMOTE_MACHINE << HERE
-	cd ~/ElasticOS-2.6/misc/get_put_pg_impl
+	cd $(EOS_DIR)/misc/get_put_pg_impl
 	insmod ./gppi.ko
-	cd ~/ElasticOS-2.6/misc/eos-nbd/nbd-kmod/ 
+	cd $(EOS_DIR)/misc/eos-nbd/nbd-kmod/ 
 	insmod ./eosnbd.ko 
 	cd ../eos-pager/dist/Debug/GNU-Linux-x86/ 
 	./eos-pager \$EOS_REMOTE_MACHINE 1043 /dev/eosnbd1 
